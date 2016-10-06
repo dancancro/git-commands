@@ -24,6 +24,7 @@ git checkout issue13
 
 # change remote 
 git remote remove origin
+
 git remote add origin https:#github.com/dancancro/ng2-redux-form
 
 # save changes without committing them so you can go to a different branch and come back later
@@ -46,10 +47,8 @@ git push origin --delete branchname
 
 # merge a branch into another branch
 git checkout dest_branch
+
 git merge source_branch
 
 # discard all unstaged changes in the current branch
 git checkout -- .
-
-# deploy to Heroku
-go into your heroku app's 'config' tab (if using the heroku dashboard) and set the NPM_CONFIG_PRODUCTION env var to false
