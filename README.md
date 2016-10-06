@@ -26,8 +26,7 @@ git checkout issue13
 git remote remove origin
 git remote add origin https:#github.com/dancancro/ng2-redux-form
 
-# save changes without committing them so you can go to a different 
-# branch and come back later
+# save changes without committing them so you can go to a different branch and come back later
 git stash
 
 # restore stashed changes
