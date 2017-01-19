@@ -52,3 +52,6 @@ git merge source_branch
 
 # discard all unstaged changes in the current branch
 git checkout -- .
+
+# Remove untracked files from the working tree
+git clean -xfd
