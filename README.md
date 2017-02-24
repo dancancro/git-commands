@@ -65,4 +65,5 @@ git checkout mynewbranch
 Do this so you can see the differences between your files and a previous commit. Repeat the command until you reach the point
 against which you want to compare your current files 
 
+
 git reset --soft HEAD~
