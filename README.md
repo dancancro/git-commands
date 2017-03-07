@@ -65,3 +65,14 @@ git checkout mynewbranch
 # between your files and a previous commit. Repeat the command until you reach the point
 # against which you want to compare your current files 
 git reset --soft HEAD~
+
+# [Combine commits from a branch and merge it into another branch](http://stackoverflow.com/questions/5308816/how-to-use-git-merge-squash)
+git checkout master
+git merge --squash bugfix
+git commit
+
+
+# Useful articles
+
+[Writing a good commit message](https://chris.beams.io/posts/git-commit/)
+[Set of useful commands like this but much better](https://www.atlassian.com/git/tutorials/rewriting-history)
