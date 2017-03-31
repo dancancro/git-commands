@@ -61,15 +61,16 @@ git branch mynewbranch
 git git reset --soft HEAD~3 # only if you want to undo last 3 commits
 git checkout mynewbranch
 
-# Undo last commit without undoing the changes. Do this so you can see the differences 
-# between your files and a previous commit. Repeat the command until you reach the point
-# against which you want to compare your current files 
-git reset --soft HEAD~
-
 # [Combine commits from a branch and merge it into another branch](http://stackoverflow.com/questions/5308816/how-to-use-git-merge-squash)
 git checkout master
 git merge --squash bugfix
 git commit
+
+# Undo last commit without undoing the changes. 
+Do this so you can see the differences between your files and a previous commit. Repeat the command until you reach the point
+against which you want to compare your current files 
+
+git reset --soft HEAD~
 
 # Rename a branch
 1. Rename your local branch.
